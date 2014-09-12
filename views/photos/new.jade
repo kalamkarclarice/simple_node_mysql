@@ -1,0 +1,10 @@
+
+h1= title
+p Upload a photo to your account below.
+form( action='/photos/create',method='post', enctype='multipart/form-data')
+  p
+    input(type='text', ,='', name='name', placeholder='Name')
+  p
+    input(type='text', ,='', name='url', placeholder='Photo Url')
+  p
+    input(type='submit', ,='', value='Add')

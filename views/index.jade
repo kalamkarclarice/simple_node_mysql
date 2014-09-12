@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  each photo in photos
+    h2= photo.name
+    img(src= photo.url )
